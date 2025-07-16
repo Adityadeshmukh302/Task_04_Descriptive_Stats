@@ -6,12 +6,12 @@ This project demonstrates reproducible descriptive statistics and data cleaning 
 It is part of Research Task 4, which compares base Python, Pandas, and Polars approaches for data summarization and analysis.
 
 **Datasets analyzed:**
-- Google Play Store Apps
-https://www.kaggle.com/datasets/lava18/google-play-store-apps
-- Telco Customer Churn
-https://www.kaggle.com/datasets/blastchar/telco-customer-churn
-- Video Games Sales
-https://www.kaggle.com/datasets/rush4ratio/video-game-sales-with-ratings
+- Google Play Store Apps  
+  https://www.kaggle.com/datasets/lava18/google-play-store-apps
+- Telco Customer Churn  
+  https://www.kaggle.com/datasets/blastchar/telco-customer-churn
+- Video Games Sales  
+  https://www.kaggle.com/datasets/rush4ratio/video-game-sales-with-ratings
 
 All data cleaning is performed before analysis to ensure accuracy and reproducibility.
 
@@ -42,8 +42,23 @@ All data cleaning is performed before analysis to ensure accuracy and reproducib
      ```
    - **Polars:**  
      ```bash
-     python src/polars2new.py
+     python src/polars_stats.py
      ```
+
+---
+
+## .gitignore
+
+A `.gitignore` file is included in the project root.  
+It ensures that sensitive, large, or unnecessary files are **not tracked** by git and **not uploaded** to GitHub.  
+Key exclusions:
+- All dataset files (`*.csv`, `Dataset_task4/`)
+- Virtual environments (`venv/`, `.venv/`)
+- Python cache and log files
+- VS Code settings
+- System files (e.g., `.DS_Store`)
+
+This keeps your repository clean and focused on code and documentation only.
 
 ---
 
@@ -165,6 +180,4 @@ Top 10 games by Global Sales:
 - **Data cleaning is crucial** for accurate analysis (e.g., converting strings to numbers, handling missing values).
 - **Group-wise summaries** help uncover trends (e.g., which contract types or genres perform best).
 - **For reproducible research:** Always clean data before analysis and document your steps.
-
----
 
