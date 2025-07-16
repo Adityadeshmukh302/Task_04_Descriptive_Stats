@@ -3,7 +3,7 @@
 ## Overview
 
 This project demonstrates reproducible descriptive statistics and data cleaning for three real-world datasets using **Pure Python**, **Pandas**, and **Polars**.  
-It is part of Research Task 4, which compares base Python, Pandas, and Polars approaches for data summarization and analysis.
+
 
 **Datasets analyzed:**
 - Google Play Store Apps  
